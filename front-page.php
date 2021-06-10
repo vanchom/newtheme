@@ -4,6 +4,10 @@ $image = get_field('main_image');
 
 $picture = $image['sizes']['large'];
 
+// $image2 = get_field('testimonial_image');
+
+// $picture2 = $image2['sizes']['large'];
+
 $benefitservices = get_field('benefit_services');
 
 $benefitservices2 = get_field('benefit_services2');
@@ -90,7 +94,7 @@ get_header();?>
         <div class="second-box">
             <h1>
         
-                <?php the_field('key_title') ?>
+                <?php the_field('key_title2') ?>
 
             </h1>
 
@@ -182,13 +186,31 @@ get_header();?>
 <section class="fourth-container">
     <div class="testimonials-container">
         <div class="testimonials-title">
-
+           <p class="testimonial-title"> <?php the_field('testimonial-title') ?></p>
+           <p class="testimonial-subtitle"><?php the_field('testimonial_subtitle') ?></p>
+        </div>
+        <div class="testimonials">
+            <div class="testimonials-box">
+                <img id="quotation" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/quotation.png"/>
+                <p class="testimonial"><?php the_field('testimonial') ?></p>
+                <p class="testimonial-subject"><?php the_field('testimonial_main_subject') ?></p>
+                <p class="name-testimonial"> <?php the_field('name_testimonial') ?> </p>
+            </div>
         </div>
         <div class="container-image">
+            <!-- <img src="<?php echo $picture2;?>" class="img-testimonial"> -->
+    <?php 
+    $image = get_field('testimonial_image');
+    $size = 'full';
+        if($image){
+            echo wp_get_attachment_image( $image , $size );
+        }
+        ?>
         </div>
+        
     </div>
-    <div class="testimonials">
-    </div>
+    
+    
 </section>
-</div>
+
 <?php get_footer();?>

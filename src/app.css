@@ -1,25 +1,34 @@
-@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 body {
   padding: 0;
   margin: 0;
 }
 
 header {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 70px;
   width: 100%;
   padding: 40px;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #EBF6FF;
 }
+
 header .custom-logo {
   height: 30px;
   padding-left: 40px;
 }
+
 header .main-nav {
   height: 24px;
   margin-left: -100px;
@@ -27,14 +36,17 @@ header .main-nav {
   position: relative;
   display: inline-block;
 }
+
 header .main-nav ul {
   list-style-type: none;
   margin-top: 0;
 }
+
 header .main-nav li {
   float: left;
   display: block;
 }
+
 header .main-nav li a {
   display: inline-block;
   font-size: 16px;
@@ -45,6 +57,7 @@ header .main-nav li a {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
 }
+
 header .main-nav .sub-menu {
   display: none;
   position: absolute;
@@ -53,6 +66,7 @@ header .main-nav .sub-menu {
   padding: 10px 0;
   z-index: 1;
 }
+
 header .main-nav .sub-menu a {
   font-size: 14px;
   text-align: left;
@@ -60,15 +74,19 @@ header .main-nav .sub-menu a {
   display: block;
   padding: 10px 15px;
 }
+
 header #menu-item-84:hover .sub-menu {
   display: block;
 }
+
 header .contact {
   height: 40px;
   width: 250px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: -5px;
 }
+
 header .contact .kb {
   border: 2px solid #053A69;
   border-radius: 5px;
@@ -84,6 +102,7 @@ header .contact .kb {
   background: #EBF6FF;
   font-family: "Rubik", sans-serif;
 }
+
 header .contact .talk {
   background: #053A69;
   width: 111px;
@@ -92,10 +111,12 @@ header .contact .talk {
   height: 40px;
   float: right;
   text-align: center;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #fff;
   font-weight: 600;
 }
+
 header .contact .talk:hover, header .contact .kb:hover {
   width: 125px;
   background: #0C508D;
@@ -104,12 +125,15 @@ header .contact .talk:hover, header .contact .kb:hover {
   font-size: 14px;
   text-align: center;
 }
+
 header .contact .talk:hover .initialText, header .contact .hoverText, header .contact .kb:hover .initialText, header .contact .kb .hoverText {
   display: none;
 }
+
 header .contact .talk:hover .hoverText {
   display: block;
 }
+
 header .contact .kb:hover .hoverText {
   display: block;
 }
@@ -122,47 +146,68 @@ header .contact .kb:hover .hoverText {
     margin-left: -50px;
   }
 }
+
 @media screen and (max-width: 1126px) and (min-width: 990px) {
   header .custom-logo {
     padding-left: 10px;
   }
 }
+
 @media screen and (max-width: 1126px) {
   header .custom-logo {
     padding-left: 5px;
   }
 }
+
 @media screen and (max-width: 1126px) {
   .contact {
     display: none;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .main-nav {
     display: none !important;
   }
 }
+
 .main-container {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
 }
+
 .main-container .first-container {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 214px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #EBF6FF;
 }
+
 .main-container .first-container .container {
   width: 800px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 150px;
   margin-top: 30px;
   margin-bottom: -20px;
 }
+
 .main-container .first-container .container h1 {
   color: #0088FF;
   font-family: "Rubik", sans-serif;
@@ -172,11 +217,14 @@ header .contact .kb:hover .hoverText {
   opacity: 1;
   font-weight: 600;
 }
+
 .main-container .first-container .container-2 {
   width: 80%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 80px;
 }
+
 .main-container .first-container .container-2 p {
   font-size: 16px;
   color: #03294A;
@@ -188,15 +236,26 @@ header .contact .kb:hover .hoverText {
   height: 440px;
   padding-top: 30px;
   background: #EBF6FF;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .second-container .btn-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .second-container .btn {
   background: #053A69;
   width: 129px;
@@ -207,6 +266,7 @@ header .contact .kb:hover .hoverText {
   font-weight: 600;
   z-index: 5;
 }
+
 .second-container .btn:hover {
   width: 125px;
   background: #0C508D;
@@ -216,10 +276,13 @@ header .contact .kb:hover .hoverText {
   text-align: center;
   cursor: pointer;
 }
+
 .second-container .image {
   margin-top: -30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .second-container .img-fluid {
   width: 100% !important;
   height: 400px;
@@ -229,20 +292,30 @@ header .contact .kb:hover .hoverText {
 .third-container {
   height: 570px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  box-sizing: border-box;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 40px;
+  background: green;
 }
+
 .third-container .rectangle {
   width: 24%;
   height: 510px;
 }
+
 .third-container .rectangle .main-box {
   height: 156px;
   padding: 3px 15px 3px 22px;
 }
+
 .third-container .rectangle .main-box h1 {
   color: #F8F8F8;
   font-size: 18px;
@@ -251,6 +324,7 @@ header .contact .kb:hover .hoverText {
   text-align: left;
   padding-bottom: 0;
 }
+
 .third-container .rectangle .main-box p {
   color: #F8F8F8;
   font-size: 14px;
@@ -259,11 +333,13 @@ header .contact .kb:hover .hoverText {
   font-weight: 500;
   padding-right: 1px;
 }
+
 .third-container .rectangle .second-box {
   background: #FFF;
   height: 300px;
   padding: 5px 9px 3px 22px;
 }
+
 .third-container .rectangle .second-box h1 {
   color: #03294A;
   font-size: 18px;
@@ -272,6 +348,7 @@ header .contact .kb:hover .hoverText {
   text-align: left;
   font-weight: 800;
 }
+
 .third-container .rectangle .second-box p {
   color: #53626F;
   font-size: 14px;
@@ -280,6 +357,7 @@ header .contact .kb:hover .hoverText {
   font-weight: 500;
   padding-right: 8px;
 }
+
 .third-container .rectangle .cta-btn {
   background: #053A69;
   color: #FFF;
@@ -288,56 +366,78 @@ header .contact .kb:hover .hoverText {
   text-align: center;
   padding: 15px;
   font-weight: 600;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-left: -2px;
   margin-right: -2px;
 }
+
 .third-container .rectangle .cta-btn:hover {
   cursor: pointer;
   background: #0C508D;
 }
+
 .third-container #first-rectangle {
   border: solid 2px #EC7325;
   border-bottom: none;
 }
+
 .third-container #first-rectangle .main-box {
   background: #EC7325;
 }
+
 .third-container #second-rectangle {
   border: solid 2px #6FB543;
   border-bottom: none;
 }
+
 .third-container #second-rectangle .main-box {
   background: #6FB543;
 }
+
 .third-container #third-rectangle {
   border: solid 2px #20A68D;
   border-bottom: none;
 }
+
 .third-container #third-rectangle .main-box {
   background: #20A68D;
 }
+
 .third-container .fourth-rectangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 23%;
   height: 520px;
 }
+
 .third-container .fourth-rectangle .small-rectangle {
   height: 156px;
 }
+
 .third-container .fourth-rectangle .small-rectangle .small-box-title {
   height: 52px;
   padding: 5px 5px 5px 22px;
 }
+
 .third-container .fourth-rectangle .small-rectangle h1 {
   font-size: 20px;
   color: #FFF;
   font-family: "Rubik", sans-serif;
   letter-spacing: 0.2px;
 }
+
 .third-container .fourth-rectangle p {
   padding-left: 22px;
   padding-right: 15px;
@@ -347,165 +447,76 @@ header .contact .kb:hover .hoverText {
   letter-spacing: 0.21px;
   font-weight: 500;
 }
+
 .third-container #first-box {
   border: 2px solid #C91242;
 }
+
 .third-container #first-box h1 {
   background: #C91242;
 }
+
 .third-container #first-box .small-box-title {
   background: #C91242;
 }
+
 .third-container #second-box {
   border: 2px solid #03294A;
 }
+
 .third-container #second-box h1 {
   background: #03294A;
 }
+
 .third-container #second-box .small-box-title {
   background: #03294A;
 }
+
 .third-container #third-box {
   border: 2px solid #FABE1D;
 }
+
 .third-container #third-box h1 {
   background: #FABE1D;
 }
+
 .third-container #third-box .small-box-title {
   background: #FABE1D;
 }
 
 .fourth-container {
-  padding: 80px;
+  height: 800px;
 }
+
 .fourth-container .testimonials-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 509px;
-  z-index: 5;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
+
 .fourth-container .testimonials-container .testimonials-title {
-  width: 40%;
-  margin-right: -300px;
-  box-sizing: content-box;
-  padding: 40px;
+  background: red;
+  height: 509px;
 }
-.fourth-container .testimonials-container .testimonials-title .testimonial-title {
-  color: #0088FF;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
-}
-.fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-  font-size: 30px;
-  color: #03294A;
-  letter-spacing: 0.34px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
-  padding-right: 50px;
-}
-.fourth-container .testimonials-container .testimonials {
-  background: #F8F8F8;
-  box-sizing: border-box;
-  height: 280px;
-  width: 80%;
-  margin-left: 0px;
-  margin-right: -50px;
-  display: flex;
-  align-self: flex-end;
-  padding: 50px 80px 40px;
-  flex-wrap: wrap;
-  z-index: 100;
-}
-.fourth-container .testimonials-container .testimonials #quotation {
-  margin: 0;
-}
-.fourth-container .testimonials-container .testimonials .testimonial {
-  color: #03294A;
-  font: normal normal medium 18px/43px;
-  font-size: bold;
-  font-family: "Rubik", sans-serif;
-  line-height: 0.43px;
-  opacity: 1;
-  margin-top: -20px;
-}
-.fourth-container .testimonials-container .testimonials .testimonial-subject {
-  font-size: 12px;
-  color: #53626F;
-  letter-spacing: 0.18px;
-  font-family: "Rubik", sans-serif;
-}
-.fourth-container .testimonials-container .testimonials .name-testimonial {
-  font-size: 14px;
-  color: #0088FF;
-}
+
 .fourth-container .testimonials-container .container-image {
-  background: #D3D3D3 0% 0% no-repeat padding-box;
-  width: 80%;
-  margin-left: -300px;
-  transform: matrix(-1, 0, 0, -1, 0, 0);
-}
-.fourth-container .testimonials-container .container-image .img-testimonial {
-  width: 500px;
-  height: 500px;
+  background: yellow;
 }
 
-@media screen and (min-width: 1600px) {
-  .second-container .image .img-fluid {
-    height: 300px;
-  }
-
-  .fourth-container .testimonials-container {
-    height: 600px;
-  }
-  .fourth-container .testimonials-container .testimonials-title {
-    width: 60%;
-    padding-right: 0;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-title {
-    font-size: 16px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    padding-right: 0px;
-    font-size: 36px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    height: 330px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 20px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial-subject {
-    font-size: 16px;
-  }
-  .fourth-container .testimonials-container .testimonials .name-testimonial {
-    font-size: 18px;
-  }
-  .fourth-container .testimonials-container .container-image {
-    width: 100%;
-  }
+.fourth-container .testimonials {
+  background: blue;
+  height: 291px;
 }
-@media screen and (max-width: 1600px) and (min-width: 1300px) {
-  .second-container .image .img-fluid {
-    height: 300px;
-  }
 
-  .fourth-container {
-    background: #FFF;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-title {
-    font-size: 16px;
-  }
-}
 @media screen and (max-width: 1300px) and (min-width: 1150px) {
   .second-container {
     height: 390px;
   }
   .second-container .image .img-fluid {
-    height: 300px;
+    height: 350px;
   }
-
   .third-container .rectangle {
     width: 24%;
   }
@@ -521,25 +532,8 @@ header .contact .kb:hover .hoverText {
   .third-container .fourth-rectangle {
     height: 510px;
   }
-
-  .fourth-container .testimonials-container .testimonials-title {
-    padding: 20px;
-    font-size: 16px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 30px;
-    padding-right: 20px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    padding-top: 30px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 17px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial-subject {
-    font-size: 14px;
-  }
 }
+
 @media screen and (max-width: 1150px) and (min-width: 960px) {
   .second-container {
     height: 340px;
@@ -547,7 +541,6 @@ header .contact .kb:hover .hoverText {
   .second-container .image .img-fluid {
     height: 300px;
   }
-
   .third-container .rectangle {
     height: 460px;
   }
@@ -578,38 +571,24 @@ header .contact .kb:hover .hoverText {
     font-size: 13px;
     padding-left: 15px;
   }
-
-  .fourth-container .testimonials-container .testimonials-title {
-    padding: 20px 50px 20px 20px;
-    font-size: 16px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 30px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    padding-top: 40px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 17px;
-  }
 }
+
 @media screen and (max-width: 960px) and (min-width: 768px) {
   .btn-container .btn {
     width: 100px;
     font-size: 14px;
     margin-top: 30px;
   }
-
   .second-container {
     height: 320px;
   }
   .second-container .image .img-fluid {
     height: 250px;
   }
-
   .third-container {
     height: 780px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-bottom: 0;
   }
   .third-container .rectangle {
@@ -633,10 +612,18 @@ header .contact .kb:hover .hoverText {
     font-size: 13px;
   }
   .third-container .fourth-rectangle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 200px;
     width: 100%;
   }
@@ -655,32 +642,8 @@ header .contact .kb:hover .hoverText {
   .third-container .fourth-rectangle .small-rectangle p {
     padding: 0 15px;
   }
-
-  .fourth-container .testimonials-container {
-    flex-wrap: wrap;
-  }
-  .fourth-container .testimonials-container .testimonials-title {
-    width: 100%;
-    padding: 0;
-    font-size: 18px;
-    margin-top: -20px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 30px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    padding: 10px 50px 30px;
-    height: 230px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 17px;
-  }
-  .fourth-container .testimonials-container .container-image {
-    width: 100%;
-    margin-left: 0;
-    height: 500px;
-  }
 }
+
 @media screen and (max-width: 768px) and (min-width: 617px) {
   .main-container .first-container .container {
     padding: 0 100px;
@@ -691,18 +654,19 @@ header .contact .kb:hover .hoverText {
   .main-container .first-container .container-2 {
     padding: 0 20px;
   }
-
   .second-container {
     height: 240px;
   }
   .second-container .image .img-fluid {
     height: 200px;
   }
-
   .third-container {
     height: 1280px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 0;
   }
@@ -727,10 +691,18 @@ header .contact .kb:hover .hoverText {
     font-size: 14px;
   }
   .third-container .fourth-rectangle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 590px;
     width: 47%;
   }
@@ -744,38 +716,14 @@ header .contact .kb:hover .hoverText {
   .third-container .fourth-rectangle p {
     font-size: 14px;
   }
-
-  .fourth-container .testimonials-container {
-    flex-wrap: wrap;
-  }
-  .fourth-container .testimonials-container .testimonials-title {
-    width: 100%;
-    padding: 0;
-    font-size: 18px;
-    margin-top: -20px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 30px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    padding: 10px 40px 30px;
-    height: 230px;
-    width: 100%;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 17px;
-  }
-  .fourth-container .testimonials-container .container-image {
-    width: 100%;
-    margin-left: 0;
-    height: 400px;
-  }
 }
+
 @media screen and (max-width: 617px) and (min-width: 480px) {
   .main-container .first-container .container {
     padding: 0 100px !important;
   }
 }
+
 @media screen and (max-width: 617px) and (min-width: 405px) {
   .main-container .first-container .container {
     padding: 0 50px;
@@ -786,7 +734,6 @@ header .contact .kb:hover .hoverText {
   .main-container .first-container .container-2 {
     padding: 0 20px;
   }
-
   .second-container {
     height: 250px;
   }
@@ -798,11 +745,13 @@ header .contact .kb:hover .hoverText {
   .second-container .image .img-fluid {
     height: 200px;
   }
-
   .third-container {
     height: 2460px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 0;
   }
@@ -828,10 +777,18 @@ header .contact .kb:hover .hoverText {
     font-size: 16px;
   }
   .third-container .fourth-rectangle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 590px;
     width: 100%;
   }
@@ -845,119 +802,9 @@ header .contact .kb:hover .hoverText {
   .third-container .fourth-rectangle p {
     font-size: 16px;
   }
+}
 
-  .fourth-container {
-    padding: 40px;
-  }
-  .fourth-container .testimonials-container {
-    flex-wrap: wrap;
-  }
-  .fourth-container .testimonials-container .testimonials-title {
-    width: 100%;
-    padding: 0;
-    font-size: 18px;
-    margin-top: -20px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 30px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    padding: 10px 20px 30px;
-    height: 200px;
-    width: 100%;
-  }
-  .fourth-container .testimonials-container .testimonials #quotation {
-    width: 30px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 15px;
-    margin-top: -40px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial-subject {
-    font-size: 11px;
-  }
-  .fourth-container .testimonials-container .container-image {
-    width: 100%;
-    margin-left: 0;
-    height: 300px;
-  }
-}
-@media screen and (max-width: 430px) and (min-width: 405px) {
-  .fourth-container {
-    padding: 40px;
-    background: #ff5e00;
-  }
-  .fourth-container .testimonials-container {
-    flex-wrap: wrap;
-  }
-  .fourth-container .testimonials-container .testimonials-title {
-    width: 100%;
-    padding: 0;
-    font-size: 18px;
-    margin-top: -20px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 30px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    margin: 0;
-    padding: 10px 20px;
-    height: 180px;
-    width: 100%;
-  }
-  .fourth-container .testimonials-container .testimonials #quotation {
-    width: 30px;
-    margin-top: -10px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 15px;
-    margin-top: -40px;
-  }
-  .fourth-container .testimonials-container .container-image {
-    width: 100%;
-    margin-left: 0;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 405px) and (min-width: 380px) {
-  .fourth-container {
-    padding: 40px;
-    background: #fffb00;
-  }
-  .fourth-container .testimonials-container {
-    flex-wrap: wrap;
-  }
-  .fourth-container .testimonials-container .testimonials-title {
-    width: 100%;
-    padding: 0;
-    font-size: 17px;
-    margin-top: -20px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 28px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    margin: 0;
-    padding: 10px 20px;
-    height: 240px;
-    width: 100%;
-  }
-  .fourth-container .testimonials-container .testimonials #quotation {
-    width: 30px;
-    margin-top: -10px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 15px;
-    margin-top: -40px;
-    line-height: 1.5;
-  }
-  .fourth-container .testimonials-container .container-image {
-    width: 100%;
-    margin-left: 0;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 405px) and (min-width: 380px) and (max-width: 405px) {
+@media screen and (max-width: 405px) {
   .main-container .first-container {
     height: 240px;
   }
@@ -970,7 +817,6 @@ header .contact .kb:hover .hoverText {
   .main-container .first-container .container-2 {
     padding: 0 20px;
   }
-
   .second-container {
     padding-top: 60px;
     height: 270px;
@@ -986,11 +832,13 @@ header .contact .kb:hover .hoverText {
   .second-container .image .img-fluid {
     height: 160px;
   }
-
   .third-container {
     height: 2460px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 0;
   }
@@ -1016,10 +864,18 @@ header .contact .kb:hover .hoverText {
     font-size: 14px;
   }
   .third-container .fourth-rectangle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 590px;
     width: 100%;
   }
@@ -1034,48 +890,11 @@ header .contact .kb:hover .hoverText {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 380px) and (min-width: 350px) {
-  .fourth-container {
-    padding: 40px;
-  }
-  .fourth-container .testimonials-container {
-    flex-wrap: wrap;
-  }
-  .fourth-container .testimonials-container .testimonials-title {
-    width: 100%;
-    padding: 0;
-    font-size: 17px;
-    margin-top: -20px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 28px;
-  }
-  .fourth-container .testimonials-container .testimonials {
-    margin: 0;
-    padding: 10px 20px;
-    height: 240px;
-    width: 100%;
-  }
-  .fourth-container .testimonials-container .testimonials #quotation {
-    width: 30px;
-    margin-top: -10px;
-  }
-  .fourth-container .testimonials-container .testimonials .testimonial {
-    font-size: 15px;
-    margin-top: -40px;
-    line-height: 1.5;
-  }
-  .fourth-container .testimonials-container .container-image {
-    width: 100%;
-    margin-left: 0;
-    height: 250px;
-  }
-}
+
 @media screen and (max-width: 350px) {
   .main-container .first-container {
     height: 280px;
   }
-
   .second-container {
     height: 240px;
   }
@@ -1085,62 +904,5 @@ header .contact .kb:hover .hoverText {
   .second-container .image .img-fluid {
     height: 130px;
   }
-
-  .third-container {
-    height: 2460px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 0;
-  }
-  .third-container .rectangle {
-    width: 100%;
-    height: 550px;
-  }
-  .third-container .rectangle .main-box {
-    height: 160px;
-    padding-left: 16px;
-  }
-  .third-container .rectangle .main-box p {
-    margin-top: -5px;
-    font-size: 14px;
-  }
-  .third-container .rectangle .second-box {
-    height: 328px;
-  }
-  .third-container .rectangle .second-box h1 {
-    font-size: 16px;
-  }
-  .third-container .rectangle .second-box p {
-    font-size: 14px;
-  }
-  .third-container .fourth-rectangle {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 590px;
-    width: 100%;
-  }
-  .third-container .fourth-rectangle .small-rectangle {
-    width: 100%;
-    height: 156px;
-  }
-  .third-container .fourth-rectangle .small-box-title h1 {
-    font-size: 16px;
-  }
-  .third-container .fourth-rectangle p {
-    font-size: 14px;
-  }
-
-  .fourth-container {
-    background: #0400ff;
-    padding: 20px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-title {
-    font-size: 14px;
-  }
-  .fourth-container .testimonials-container .testimonials-title .testimonial-subtitle {
-    font-size: 24px;
-  }
 }
+/*# sourceMappingURL=app.css.map */
