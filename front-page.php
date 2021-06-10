@@ -63,7 +63,7 @@ get_header();?>
             </h1>
 
             <p>
-            <?php echo implode('&#10004', $benefitservices).'<br>';?>
+            <?php echo '&#10004 '.implode('<br>', ($benefitservices));?>
                
             </p>
 
@@ -90,13 +90,12 @@ get_header();?>
         <div class="second-box">
             <h1>
         
-                <?php the_field('key_title2') ?>
+                <?php the_field('key_title') ?>
 
             </h1>
 
             <p>
-            <?php echo implode('&#10004', $benefitservices2).'<br>';?>
-               
+            <?php echo '&#10004 '.implode('<br>', ($benefitservices2));?>               
             </p>
 
         </div>
@@ -127,8 +126,7 @@ get_header();?>
             </h1>
 
             <p>
-            <?php echo implode('',$benefitservices3).'<br>';?>
-               
+            <?php echo '&#10004 '.implode('<br>', ($benefitservices3));?>               
             </p>
         </div>
         <div class="cta-btn">
@@ -182,8 +180,14 @@ get_header();?>
 
 </section>
 <section class="fourth-container">
-    <div class="testimonials">
+    <div class="testimonials-container">
+        <div class="testimonials-title">
 
+        </div>
+        <div class="container-image">
+        </div>
+    </div>
+    <div class="testimonials">
     </div>
 </section>
 </div>
