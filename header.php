@@ -42,8 +42,14 @@
     <span class="hoverText">CTA button</span>
 </button>
 <button class="kb">
-    <span class="initialText">KB</span>
-    <span class="hoverText">CTA button</span>
+    <!-- <span class="initialText">KB</span>
+    <span class="hoverText">CTA button</span> -->
+    <span class="initialText">
+        <?php echo '<a href="kb">KB</a>' ;?>
+    </span>
+    <span class="hoverText">
+        <?php echo '<a href="kb">CTA button</a>' ;?>
+    </span>
 </button>
 
 

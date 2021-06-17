@@ -43,3 +43,17 @@ function register_my_menus() {
    }
    add_action( 'init', 'register_my_menus' );
 
+
+//    function order_posts_by_title( $query ) { 
+
+//     if ( $query-is_home() && $query-is_main_query() ) { 
+ 
+//       $query-set( 'orderby', 'title' ); 
+ 
+//       $query-set( 'order', 'ASC' ); 
+ 
+//     } 
+ 
+//  } 
+ 
+//  add_action( 'pre_get_posts', 'order_posts_by_title' );

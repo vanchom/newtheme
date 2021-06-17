@@ -12,8 +12,15 @@ $box2:#6FB543;
 $box3:#20A68D;
 $smallbox:#C91242;
 $smallbox2:#FABE1D;
+$bkbox1: #ED7228;
+$bkbox2:#6FB543;
+$bkbox3:#50A68C;
+$backgroundbox1:#F1B68F;
+$backgroundbox2:#B4D79E;
+$backgroundbox3:#8CCFC3;
 
 $font-family:'Rubik', sans-serif;
 
 @import 'header';
 @import 'content';
+@import 'bk.scss';

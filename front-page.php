@@ -198,7 +198,6 @@ get_header();?>
             </div>
         </div>
         <div class="container-image">
-            <!-- <img src="<?php echo $picture2;?>" class="img-testimonial"> -->
     <?php 
     $image = get_field('testimonial_image');
     $size = 'full';
@@ -207,10 +206,12 @@ get_header();?>
         }
         ?>
         </div>
-        
     </div>
-    
-    
 </section>
-
+<section class="container-arrows">
+    <div class="arrows-box">
+        <img class="arrows" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-left.png"/>
+        <img class="arrows" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right.png"/>
+    </div>
+    </section>
 <?php get_footer();?>

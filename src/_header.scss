@@ -82,6 +82,15 @@ header{
         font-weight: 600;
         background: $background;
         font-family: $font-family;
+        .initialText{
+            a{
+            text-decoration: none;
+            }
+            a:hover{
+        color: #fff!important;
+            }
+        }
+      
     }
     .talk{
         background: $color5; 

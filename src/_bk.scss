@@ -1,0 +1,282 @@
+
+.kb-header{
+    margin:0;
+    background: $background;
+    box-sizing: content-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:75px;
+    h1{
+        color:$secondary;
+        font-family: $font-family;
+        font-size: 34px;
+    }
+}
+.select-container{
+    display:flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content:space-evenly;
+    padding:80px;
+    .version-box{
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        width:30%;
+        h2{
+            color:$primary;
+            font-size:18px;
+            font-family: $font-family;
+        }
+        .dropdown{
+            padding: 13px;
+            #orderby{
+                padding:3px 15px;
+            }
+        }
+    }
+    .colors-boxes{
+        width: 30%;
+        padding-top:5px;
+        display: flex;
+        flex-wrap: nowrap;
+        .colors{
+            width:60px;
+            height:60px;
+            border-radius: 5px;
+            margin-left:40px;
+        }
+        .colors:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #color1{
+            background:$bkbox1;
+        }
+        #color2{
+            background:$bkbox2;
+        }
+        #color3{
+            background:$bkbox3;
+        }
+    }
+    
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .services{
+        display:flex;
+        flex-wrap: nowrap;
+        font-family: $font-family;
+        margin-top:20px;
+        .service-description{
+            background: $color3;
+            padding:10px 100px 10px 25px;
+            width:100%;
+            h2{
+                color:$primary;
+                font-size:18px;
+                font-weight:700;
+            }
+            h3{
+                color:$secondary;
+                font-size: 14px;  
+            }
+            p{
+            color:$color4;
+            font-size: 14px;
+            }
+        }
+        .service-color{
+            width:100px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: left;
+            padding:0;
+            .colors-boxes{
+                width: 20%;
+                padding:0;
+                .colors{
+                    width:60px;
+                    height:60px;
+                    border-radius: 5px;
+                    margin:15px;
+                }             
+                #color1{
+                    background:$bkbox1;
+                }
+                #color2{
+                    background:$bkbox2;
+                }
+                #color3{
+                    background:$bkbox3;
+                }
+            }
+        }
+        #service-color1{
+            background: $backgroundbox1;
+        }
+        #service-color2{
+            background: $backgroundbox2;
+        }
+        #service-color3{
+            background: $backgroundbox3;
+        }
+    }
+}
+@media screen and (min-width: 1600px) {
+    .services-container{
+        .services{
+            width:50%;
+            .service-description{
+                padding-right:150px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1150px){
+    .select-container{
+        .colors-boxes{
+            width:30%;
+            .colors{
+                width:55px;
+                height:55px;
+                margin-left:20px;
+            }
+        }
+    }
+    .services-container{
+        .services{
+            width:51%;      
+        }
+    }
+}
+@media screen and (max-width: 1150px) and (min-width: 800px){
+    .select-container{
+        .colors-boxes{
+            width:30%;
+            .colors{
+                width:50px;
+                height:50px;
+                margin-left:20px;
+            }
+        }
+    }
+    .services-container{
+        .services{
+            width:60%;
+           .service-description{
+               padding-right:100px;
+           }
+           .service-color{
+               .colors-boxes{
+                   .colors{
+                       width:50px;
+                       height:50px;
+                   }
+               }
+           }
+        }
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 730px){
+    .select-container{
+        .colors-boxes{
+            width:30%;
+            .colors{
+                width:45px;
+                height:45px;
+                margin-left:20px;
+            }
+        }
+    }
+    .services-container{
+        .services{
+            width:60%;
+           .service-description{
+               padding-right:40px;
+           }
+           .service-color{
+               .colors-boxes{
+                   .colors{
+                       width:40px;
+                       height:40px;
+                   }
+               }
+           }
+        }
+    }
+}
+@media screen and (max-width: 730px) and (min-width: 420px){
+    .select-container{
+        padding: 60px 10px;
+        .colors-boxes{
+            width:50%;
+            justify-content: center;
+            .colors{
+                width:40px;
+                height:40px;
+                margin-left:20px;
+            }
+        }
+    }
+    .services-container{
+        margin-top:-10px;
+        .services{
+            width:80%;
+           .service-description{
+               padding-right:40px;
+           }
+           .service-color{
+               .colors-boxes{
+                   .colors{
+                       width:40px;
+                       height:40px;
+                   }
+               }
+           }
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .select-container{
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        .version-box{
+        width:100%;
+        }
+        .colors-boxes{
+            margin-top:10px;
+            width:100%;
+            justify-content: center;
+            .colors{
+                width:35px;
+                height:35px;
+                margin-left:20px;
+            }
+        }
+    }
+    .services-container{
+        margin-top:-10px;
+        .services{
+            width:80%;
+           .service-description{
+               padding-right:40px;
+           }
+           .service-color{
+               .colors-boxes{
+                   .colors{
+                       width:35px;
+                       height:35px;
+                   }
+               }
+           }
+        }
+    }
+}

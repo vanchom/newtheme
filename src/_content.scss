@@ -238,11 +238,10 @@
             .small-box-title{
                 background: $smallbox2;
             }
-        
     }
 }
 .fourth-container{
-    padding:80px;
+    padding:80px 80px 0 80px;
     .testimonials-container{
         display: flex;
         flex-wrap: nowrap;
@@ -315,7 +314,19 @@
             }
         }
     }
+}
+.container-arrows{
+    width:96px;
+    height: 40px;
+    background:$secondary;
+    display: flex;
+    margin:0 auto;
     
+}
+.arrows{
+    width:8px;
+    height:12px;
+    padding:15px 15px 15px 20px;
 }
 @media screen and (min-width: 1600px) {
     .second-container{
