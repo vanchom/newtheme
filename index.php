@@ -4,11 +4,31 @@
             <h2>Version</h2>
             <div class="dropdown">
 					<select name="orderby" id="orderby" >
-						<option value="version"
-						<?php 
+					<a href="#"sortby=version1><option value="version">
+					
+					<?php $args = array(
+						'tag' => 1,
+						'offset' => 1,
+						'order' => 'ASC',
+						'orderby' => 'title'
+					);
+						
+						$version = new WP_Query($args);
+						if($version->have_posts()) :
+						while($version->have_posts()) : $version->the_post(); ?>
+						<h2>
+							<?php the_title(); ?>
+						</h2>
+						<?php
+					endwhile;
+					else:
+					endif; ?>
+						
+						<!-- <?php 
 					$args = array(
 						'tag' => 1,
-						'offset' => 1
+						'offset' => 1,
+						'order' => 'ASC'
 					);
 					$query = new WP_Query( $arg);
 
@@ -18,8 +38,8 @@
 						}
 					}
 					rewind_posts();
-					?>
->1</option>
+					?> -->
+1</option></a>
 						<option value="version">2</option>
 						<option value="version">3</option>
 						<option value="version">4</option>

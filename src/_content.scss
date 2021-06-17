@@ -406,11 +406,14 @@
                 }
             }
             .second-box{
-                height:278px;
+                height:300px;
             }
         }
         .fourth-rectangle{
-        height:510px;
+        height:532px;
+        .small-rectangle{
+            height:164px;
+        }
         }
     }
     .fourth-container{
@@ -635,6 +638,9 @@
                 }
                 p{
                     font-size: 14px;
+                    .img{
+                        color:red;
+                    }
                 }
             }
         }

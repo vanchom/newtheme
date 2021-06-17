@@ -67,7 +67,7 @@ get_header();?>
             </h1>
 
             <p>
-            <?php echo '&#10004 '.implode('<br>', ($benefitservices));?>
+            <?php echo '&#10004 '.implode('<br><br>&#10004', ($benefitservices));?>
                
             </p>
 
@@ -99,7 +99,7 @@ get_header();?>
             </h1>
 
             <p>
-            <?php echo '&#10004 '.implode('<br>', ($benefitservices2));?>               
+            <?php echo '&#10004 '.implode('<br><br>&#10004', ($benefitservices2));?>               
             </p>
 
         </div>
@@ -130,7 +130,7 @@ get_header();?>
             </h1>
 
             <p>
-            <?php echo '&#10004 '.implode('<br>', ($benefitservices3));?>               
+            <?php echo '&#10004 '.implode('<br><br>&#10004', ($benefitservices3));?>               
             </p>
         </div>
         <div class="cta-btn">
